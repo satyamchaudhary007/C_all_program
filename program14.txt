@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+    int length1, length2 = 0, i;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    // Using string function
+    length1 = strlen(str);
+
+    // Without using string function
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        length2++;
+    }
+
+    printf("Length using strlen() = %d\n", length1);
+    printf("Length without function = %d", length2);
+
+    return 0;
+}
