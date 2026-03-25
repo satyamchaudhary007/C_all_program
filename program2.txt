@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[3][5];
+    int i, j;
+
+    /* Input values */
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 5; j++)
+        {
+            printf("Enter number: ");
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    /* Display values */
+    printf("\nArray elements are:\n");
+
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 5; j++)
+        {
+            printf("%d\t", a[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
