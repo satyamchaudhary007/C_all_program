@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[5], i;
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("\nEnter value: ");
+        scanf("%d", &a[i]);
+    }
+
+    printf("\nEntered values are as follows:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d\n", a[i]);
+    }
+
+    return 0;
+}
